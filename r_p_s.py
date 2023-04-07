@@ -87,9 +87,10 @@ def start_rps():
         print("User 2 Wins: ", wins2)
         timestamp = timestamp.timestamp()
         
-        rps_results = open("rps_results.txt","a")
-        rps_results.write(f"Game End: {timestamp} ")
+        rps_results = open("rps_results.txt","a") 
+        rps_results.write(f"Game End: {timestamp} ") #adding timestamp
         rps_results.writelines([f"[Draws: {draws},",f" User #1 Wins: {wins1},",f" User #2 Wins: {wins2}]\n"])
+        #appending game results to file
         
     if players == "1":
         
@@ -100,7 +101,7 @@ def start_rps():
         timestamp = timestamp.timestamp()
         
         rps_results = open("rps_results.txt","a")
-        rps_results.write(f"Game End: {timestamp} ")
+        rps_results.write(f"Game End: {timestamp} ") #adding timestamp
         rps_results.writelines([f"[Draws: {draws},",f" User Wins: {wins1},",f" Computer Wins: {wins2}]\n"])
-                
+        #appending game results to file        
        
