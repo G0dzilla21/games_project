@@ -23,8 +23,8 @@ def start_rps():
     while players == "2" and replay1 == "1":
         
         #get the multiplayer inputs
-        user1 = multi_inputs.user1()
-        user2 = multi_inputs.user2()   
+        user1 = multi_inputs.get_user_input(1)
+        user2 = multi_inputs.get_user_input(2)   
     
         #first compare the two objects to see if there is a draw    
         if user1 == user2:
